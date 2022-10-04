@@ -1,10 +1,41 @@
 .board {
   box-sizing:border-box;
-display: flex;
-height: 50px;
-width: 50px;
-
-}
+  display: flex;
+  height: 400px;
+  width: 400px;
+  flex-wrap: wrap
+  
+  
+  }     
+  
+  .cell{
+      display: flex;
+      flex-direction: column;
+      flex-basis: 120px;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .body{
+     padding-top:250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  
+  
+  .cell:nth-child(3n+2) {
+  border-left:solid 2px;
+  border-right:solid 2px;
+  
+  }
+  
+  .cell:nth-child(n+4) {
+      border-top:solid 2px;
+     
+  }
+  
 
 
 
